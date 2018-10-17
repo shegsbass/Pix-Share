@@ -13,7 +13,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
     public void MainPage(View view) {
-        Intent button = new Intent(this, LoginActivity.class); //Need tp change the name of the class to the class i want to link to.
+        Intent button = new Intent(this, AndroidGridViewDisplayImages.class); //Need tp change the name of the class to the class i want to link to.
         startActivity(button);
     }
-}
+    }
+
