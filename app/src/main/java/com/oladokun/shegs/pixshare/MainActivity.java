@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private static int SPLASH_TIME_OUT = 6000;
+    private static int SPLASH_TIME_OUT = 10000000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,13 @@ public class MainActivity extends AppCompatActivity {
         }, SPLASH_TIME_OUT);
     }
 
+    //This will take me to the login page
     public void nextPage(View view) {
         Intent button = new Intent(this, LoginActivity.class);
         startActivity(button);
     }
 
+    //This will take me to the signup page
     public void signUp(View view) {
         Intent button = new Intent(this, SignupActivity.class);
         startActivity(button);
